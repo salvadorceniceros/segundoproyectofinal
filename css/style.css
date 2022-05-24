@@ -1,0 +1,275 @@
+/* Reiniciar los valores del navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Colores para la pagina
+
+fondos: #EFFFFD Titulos: #006778 Subtítulos: #42C2FF enlaces: #FFD124 extra: #85F4FF
+
+*/
+
+html body {
+    padding-top: 50px;
+    background-color: #f7f7f7;
+}
+
+h1, h2{
+    font-size: 1.5rem;
+    text-align: center;
+}
+.bg-rojo{
+    background-color:#b01e37;
+}
+.btn-rojo{
+    color: #fff;
+    background-color:#b01e37;
+    border-color: #b01e37;
+}
+p {
+    text-align: justify;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+
+.letra{
+    color: black;
+}
+
+main p {
+    text-align: justify;
+    margin: 0 10px;
+    padding-top: 10px;
+}
+/* alinear contenedor de noticias y eventos */
+.novedades{
+    display: flex;
+    flex-direction: column;
+    align-content: start;
+    padding-top: 1rem;
+}
+
+/* aplicando espacio en el complemento de información */
+.complemento{
+    margin: 1rem auto;
+}
+
+/* Ajustando las imagenes para que no se desborden */
+.novedades div img {
+    width: 100%;
+    border: 3px solid white;
+    border-radius: 5px;
+    padding: 0 1px; 
+}
+
+/* formato a las tablas */
+    tr, td, th,{ border: 1px solid grey;
+    height=60;
+    width="100%";
+}
+
+.principal img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+}
+
+.principal ul li{
+    text-align: justify;
+}
+
+.mapa{
+    margin-top:1rem;
+}
+
+/* .identidad{
+    display: flex;
+    flex-direction: column;
+} */
+footer h3, h4 {
+    font-size: 1rem;
+    text-align: center;
+}
+
+footer {
+    margin-top: 15px;
+    background-color: #F0F4F7;
+}
+
+/* Este es el tamaño para dispositivos mobiles*/
+.container{
+    display: grid;
+    grid-template-areas:
+    "principal"
+    "complemento"
+    "novedades"
+    "mapa"
+    "footer";
+}
+.principal{
+    grid-area: principal;
+}
+.novedades{
+    grid-area: novedades;
+}
+.complemento{
+    grid-area: complemento;
+}
+/* .noticias{
+    grid-area: noticias;
+}
+.eventos{
+    grid-area: eventos;
+} */
+.mapa{
+    grid-area: mapa;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+footer{
+    grid-area: footer;
+}
+
+/* configuración para tablets */
+@media screen and (min-width:576px) {
+    .container{
+        grid-template-areas:"principal novedades"
+        "complemento complemento"
+    "mapa mapa"
+    "footer footer";
+}
+.principal{
+    grid-area: principal;
+}
+.complemento{
+    grid-area: complemento;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.novedades{
+    grid-area: novedades;
+}
+/* .noticias{
+    grid-area: noticias;
+}
+.eventos{
+    grid-area: eventos;
+} */
+.mapa{
+    grid-area: mapa;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+
+footer{
+    grid-area: footer;
+}
+}
+
+/* configuración para Desktop */
+@media screen and (min-width:1200px) {
+    .container{
+        grid-template-areas:"principal principal principal"
+        "complemento complemento complemento"
+        "novedades novedades novedades"
+    "mapa mapa mapa"
+    "footer footer footer";
+}
+.principal{
+    grid-area: principal;
+}
+.complemento{
+    grid-area: complemento;
+}
+.novedades{
+    grid-area: novedades;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0 1rem;
+    background-color: #F0F4F7;
+}
+/* .noticias{
+    grid-area: noticias;
+    display: flex;
+    flex-direction: row;
+}
+.eventos{
+    grid-area: eventos;
+    display: flex;
+    flex-direction: row;
+} */
+
+
+.mapa{
+    grid-area: mapa;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+footer{
+    grid-area: footer;
+}
+}
+
+/* Configuración al container para aplicar la Grid de CSS */
+.container{
+    max-width: 100%;
+}
+
+/* Animaciones a las imagenes */
+.scale-in-center {
+	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+/* Configuracion animaciones */
+@-webkit-keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  /* Animaciones a los botones */
+ section div a:hover{
+    display: block;
+   font-size: 1.2rem;
+   background-color: cornsilk;
+}
+
+/* Gradientes a las tablas */
+.lineal {
+   width: 250px;
+   height:200px;
+   background: linear-gradient(red, yellow, blue, green);}
+
+.degradado{
+   background: rgb(0,151,181);
+   background: linear-gradient(90deg, rgba(0,151,181,1) 0%, rgba(9,95,121,1) 52%, rgba(0,151,181,1) 100%);
+color: white;
+border-bottom-left-radius: 0.5rem;
+border-bottom-right-radius: 0.5rem;}
