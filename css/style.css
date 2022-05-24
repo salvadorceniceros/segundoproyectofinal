@@ -13,7 +13,7 @@ fondos: #EFFFFD Titulos: #006778 Subtítulos: #42C2FF enlaces: #FFD124 extra: #8
 */
 
 html body {
-    padding-top: 50px;
+    padding-top: 75px;
     background-color: #f7f7f7;
 }
 
@@ -29,10 +29,20 @@ h1, h2{
     background-color:#b01e37;
     border-color: #b01e37;
 }
+
+/* Quitar el border-radius a los enlaces */
+.btn-br{
+    border-radius: 0px
+}
+
 p {
     text-align: justify;
     margin: 0 auto;
     padding-top: 10px;
+}
+
+.navfondo{
+    background-color: #f7f7f7
 }
 
 .letra{

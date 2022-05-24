@@ -17,7 +17,7 @@
 <body>
    
 <!--Menu principal-->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light" style="background-color: #f7f7f7;">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light navfondo">
         <div class="container-fluid">
             <a class="navbar-brand scale-in-center" href="#"><img src="img/logo.jpeg" width="200"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mimenu" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,6 +53,58 @@
         </div>
     </nav>
 <main class="container-fluid">
+
+       <!--Elemnetos de encabezado-->
+    <!--Pantalla chica-->
+    <div class="d-lg-none">
+        <div class="container-fluid">
+            <div class="row bg-rojo">
+                <div class="col-4">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <a type="button" class="btn btn-rojo" href="https://www.youtube.com/channel/UC7_cYAV2X7fujCpTEZnm0hQ" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a type="button" class="btn btn-rojo" href="https://www.facebook.com/UniversidadAutonomadeCoahuilaOficial" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a type="button" class="btn btn-rojo" href="https://twitter.com/UAdeC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-5"><a class="nav-link text-white" href="#"><i class="fas fa-desktop mr10 mt-2"></i> Servicios en Linea</a></div>
+                <div class="col">
+                    <div class="dropdown float-end">
+                        <a class="btn btn-rojo dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><h6 class="dropdown-header">Selecciona Opción</h6></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="http://www.uadec.mx/estudiantes/" target="_blank"><i class="fas fa-user-friends"></i> Alumnos</a></li>
+                            <li><a class="dropdown-item" href="http://www.uadec.mx/docentes/" target="_blank"><i class="fas fa-chalkboard fa-chalkboard-teacher"></i> Docentes</a></li>
+                            <li></i><a class="dropdown-item" href="http://www.egresados.uadec.mx/" target="_blank"><i class="fas fa-graduation-cap"></i> Egresados</a></li>
+                            <li><a class="dropdown-item" href="http://www.uadec.mx/aspirantes/" target="_blank"><i class="fas fa-book-open"></i> Aspirantes</a></li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Pantalla grande-->
+    <div class="d-none d-lg-block">
+        <div class="container-fluid">
+            <div class="row bg-rojo">
+                <div class="col-4">
+                    <div class="btn-group" role="group" aria-label="Basic example">
+                        <a type="button" class="btn btn-rojo" href="https://www.youtube.com/channel/UC7_cYAV2X7fujCpTEZnm0hQ" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a type="button" class="btn btn-rojo" href="https://www.facebook.com/UniversidadAutonomadeCoahuilaOficial" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a type="button" class="btn btn-rojo" href="https://twitter.com/UAdeC?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                                    
+                <div class="col-2 border border-top-0 border-bottom-0 btn btn-outline-danger m-0 p-0 btn-br"><a class="nav-link text-white mt-2 text-center" href=http://www.uadec.mx/estudiantes/ target="_blank"><i class="fas fa-user-friends"></i> Alumnos</a></div>
+                <div class="col-2 border border-top-0 border-bottom-0 btn btn-outline-danger m-0 p-0 btn-br"><a class="nav-link text-white mt-2 text-center" href="http://www.uadec.mx/docentes/" target="_blank"><i class="fas fa-chalkboard fa-chalkboard-teacher"></i> Docentes</a></div>
+                <div class="col-2 border border-top-0 border-bottom-0 btn btn-outline-danger m-0 p-0 btn-br"><a class="nav-link text-white mt-2 text-center" href="http://www.egresados.uadec.mx/" target="_blank" ><i class="fas fa-graduation-cap"></i> Egresados</a></div>
+                <div class="col-2 border border-top-0 border-bottom-0 btn btn-outline-danger m-0 p-0 btn-br"><a class="nav-link text-white mt-2 text-center" href="http://www.uadec.mx/aspirantes/" target="_blank"><i class="fas fa-book-open"></i> Aspirantes</a></div>
+            </div>
+        </div>
+    </div>
+
     <!--Carusel-->
     <div id="carouselCaptions" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -161,9 +213,6 @@
                 </div>
             </div>        
         </div>
-    </div>
-    <div class="card">
-
     </div>
 </main>
 
