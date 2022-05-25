@@ -221,16 +221,23 @@
         <h2>envianos tús datos para saber más de tí</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eum qui ipsa impedit amet nobis, commodi quod quas esse reprehenderit et consectetur reiciendis vero! Consequuntur reiciendis minus tempora molestias minima! Modi asperiores itaque
             vitae incidunt ipsam quam, magni soluta aliquam cum, laboriosam culpa maxime amet veritatis nam repudiandae necessitatibus tempore iusto impedit pariatur alias voluptates dolor esse. Minus, eum totam?</p>
-        <form action="">
-            <fieldset>
-                <legend>Escribe tús datos aquí:</legend>
+            <section class="form-registro">
+                <h4>Escribe tús datos aquí</h4>
                 <div>
                     <label for="nombre">Nombre:</label>
-                    <input name="nombre" type=" text " placeholder="Juan Pérez">
+                    <input class="control" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre">
                 </div>
                 <div>
-                    <label for="correo">Cual es tú correo:</label>
-                    <input name="correo" type="email" placeholder="micorreo@dominio.com">
+                    <label for="apellidos">Apellidos:</label>
+                    <input class="control" type="text" name="Apellidos" id="apellidos" placeholder="Ingrese sus apellidos">
+                </div>
+                <div>
+                    <label for="correo">Correo Electrónico</label>
+                    <input class="control" type="email" name="correo" id="correo" placeholder="Ingrese su correo">
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input class="control" type="password" name="correo" id="correo" placeholder="Ingrese su contraseña">
                 </div>
                 <div>
                     <label for="pais">Selecciona de la lista tú país:</label>
@@ -243,13 +250,11 @@
                     </select>
                 </div>
                 <div>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpiar formulario">
+                    <input class="button" type="submit" value="Enviar">
+                    <input class="button" type="reset" value="Limpiar formulario">
                 </div>
-            </fieldset>
-        </form>
-        </section>
-                  
+            </section>  
+    </section>           
     <section class="novedades">
         <div class="eventos">
             <img src="../img/p-eventos.png " alt="Proximos Eventos ">
